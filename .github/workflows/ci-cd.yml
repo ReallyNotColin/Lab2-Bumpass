@@ -3,7 +3,7 @@ name: Simple CI/CD Workflow
 on:
   push:
     branches:
-      - a-completely-different-branch   # Error: Changed to a non-existent branch
+      - main   
 
 jobs:
   build:
@@ -36,5 +36,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: webpage
-          path: index.html
+          path: different-file.html #changed file name to error-out
 
