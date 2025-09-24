@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: something-completely-random #changed from actions/checkout@v4 --> nonsense
+        uses: actions/checkout@v4 #fixed from something-completely-random --> actions/checkout@v4
 
       - name: Build step
         run: echo "Build OK - HTML validated"
